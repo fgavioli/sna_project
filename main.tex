@@ -62,7 +62,7 @@
 \title{\textbf{Bibliographic analysis of ...} \\ \textit{\normalsize{Social Network Analysis Project report}}}
 \author{Federico Gavioli}
 \affil{\textit{federico.gavioli@unimore.it}}
-\date{}
+\date{\today}
 
 \begin{document}
 \maketitle
@@ -72,11 +72,48 @@ TODO
 \end{abstract}
 
 
-\section{Research topic and scenario}
+\section{Introduction}
+Lidar odometry is a fundamental technique in the field of autonomous navigation, playing a critical role in enabling an accurate motion estimation. Unlike GPS, which can suffer from signal loss or inaccuracy in urban or indoor environments, lidar-based systems offer high-resolution, 3D perception of the environment that is resilient to lighting changes and many visual obstructions. As the demand for reliable self-driving vehicles, drones, and robotic platforms continues to grow, an accurate, robust on-edge solution to motion estimation becomes increasingly essential.
 
-\section{Research questions}
+One of the most precise sensors for motion estimation is the LiDAR (Light Detection and Ranging), which uses laser pulses to measure distances to surrounding objects. Lidar odometry involves aligning point clouds to estimate the motion of the sensor over time, allowing for real-time localization and mapping.
 
-\section{Results}
+My personal research focuses on high performance embedded platforms for autonomous systems, particularly by studying hardware acceleration and offloading solutions for on-edge sensor processing.
+
+In this project, my aim is to analyze the state of the art in lidar odometry, identifying state of the art solutions to lidar odometry \textcolor{green}{TODO: ADD SOME INTROCUTION TO THE FOLLOWING SECTIONS}... By conducting a comprehensive literature review and social network analysis of the research community, I aim to uncover the most influential works and authors in this field.
+
+
+
+\section{Dataset}
+Given the topic of this bibliographic analysis, I have chosen to focus on the broader field of lidar odometry. The dataset used in this analysis is a collection of bibliographic records that includes papers, articles, and conference proceedings relevant to lidar odometry.
+
+\subsection{Dataset collection}
+The bibliographic dataset obtained via Scopus, a major abstract and citation database.
+
+The query used to collect the data \textcolor{green}{query} is intentionally generic, in order to capture a wide range of literature works. The query was then refined to focus on articles and conference papers and to remove false positives related to radar odometry, which is out of the topic of this project.
+
+The dataset was finally exported in BibTeX format, inclyuding all available metadata from Scopus.
+
+\subsection{Dataset overview}
+The dataset is imported into biblioshiny\cite{biblioshiny}, a web interface for the bibliometrix\cite{bibliometrix} package of the R language.
+
+Explain that the data is collected from Scopus and exported in Bibtex.
+
+
+\section{Questions and Analysis}
+After getting a feel for the data, I have identified some questions which are worthy to guide the network analysis of this community.
+\subsection{Which researchers or institutions are most central in advancing hardware offloading strategies?}
+    - Si cerca di solito usare come grafo quello del co-authoring
+\subsection{What are the major communities in this research area, and how do they interact?}
+    - Attenzione al tipo di rete
+\subsection{How has the focus shifted over time? Is software becoming prevalent?}
+    - Fare diverse prove, magari tanti paper sono riferiti a un singolo periodo storico. Se dividi un periodo di 20 anni in blocchi da 5 non hai una distribuzione omogenea. Fare tanti tentativi.
+\subsection{Are there "bridging" papers or authors that connect otherwise disconnected subfields (e.g., real-time OS design and deep learning deployment)?}
+    -
+
+\section{Discussion}
+
+
+\section{Conclusions}
 
 % \begin{figure}[!htbp]
 %     \centering
@@ -84,5 +121,8 @@ TODO
 %     \caption{Lovelace interface}
 %     \label{fig:lovelace}
 % \end{figure}
+
+\bibliographystyle{plain}
+\bibliography{references}
 
 \end{document}
