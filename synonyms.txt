@@ -1,0 +1,7 @@
+pose graph optimization, factor graph optimization, graph optimization
+slam, simultaneous localization and mapping, simultaneous localization and mapping (slam), lidar slam
+lidar, light detection and ranging, light detection and ranging (lidar), 3d lidar, 2d lidar, localization and mapping
+loop closure, loop closure detection
+localization, positioning
+pose estimation, state estimation
+ROS, ros, robot operating system,
