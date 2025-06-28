@@ -140,7 +140,6 @@ The resulting network (Figure \ref{fig:coauth_network}) shows the co-authorship 
 
 From this analysis, we can conclude that the LiDAR odometry research area is still quite fragmented, with several isolated institutions and small clusters of researchers working together. However, identified some key researchers and institutions that are actively working together to advance the field and are likely to have a significant impact on its future development.
 
-
 % Q2
 \subsection{How has the focus on this research topic shifted over time?}
 To perform a thematic analysis of the research area, we will first need to analyze how the paper production density over time. We can assume that peaks in the number of publications correspond to shifts in the research focus, as they indicate a growing interest in a specific topic.
@@ -153,6 +152,8 @@ To perform a thematic analysis of the research area, we will first need to analy
 \end{figure}
 
 We can se from the graph in Figure \ref{fig:paper_production} that the number of publications has three peaks, respectively in 2016, 2018 and 2022. We can use this peaks to split the dataset into four time periods to perform a thematic evolution analysis of the papers published in each period.
+
+ To perform this keyword-based analysis, I first created a word list of synonyms to merge synonyms in the dataset. The list is attached in the \codeword{synonyms.txt} file.
 
 \begin{figure}[!htbp]
     \centering
@@ -188,10 +189,11 @@ In Figure \ref{fig:topics_2019_2022}, we can see the topics of the papers publis
     \label{fig:topics_2023_2025}
 \end{figure}
 
-Finally, we can analyze the topics of the papers between 2023 and 2025, which are shown in Figure \ref{fig:topics_2023_2025}. The is becoming more and more fragmented, with several subfields emerging. This is due to the topic becoming more mature, with researchers focusing on specific aspects of the topic, like the 3D \codeword{localization} problem, the deployment on \codeword{terrestrial} vehicles or sensor \codeword{fusion}, integrating other sensors in the odometry pipeline.
+Finally, we can analyze the topics of the papers between 2023 and 2025, which are shown in Figure \ref{fig:topics_2023_2025}. The is becoming more and more fragmented, with several subfields emerging. This is due to the topic becoming more mature, with researchers focusing on specific aspects of the topic, like the 3D \codeword{localization} problem, the deployment on \codeword{terrestrial} vehicles or sensor \codeword{fusion}, integrating other odometry factors in order to make the estimation more robust and reliable.
 
 \section{Conclusions}
 The thematic analysis reveals that the focus of LiDAR odometry research has shifted from foundational methods and sensor registration to more robust, application-oriented solutions, with increasing attention to robustness and deployment in specific applicative scenarios. This is consistent with the growing interest in autonomous systems and the need for reliable and accurate motion estimation solutions. I now have valuable pointers to research works and topics to explore to make my research on hardware offloading solutions more effective and relevant to this quickly developing field.
+
 
 \bibliographystyle{plain}
 \bibliography{references}
